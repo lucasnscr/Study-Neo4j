@@ -49,6 +49,8 @@ CREATE
 ;
 ```
 
+![Screenshot](graph (1).png)
+
 ### Technologies
 
 The following technologies were used to carry out the project:
