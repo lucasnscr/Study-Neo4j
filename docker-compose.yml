@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  neo4j:
+    image: neo4j:latest
+    network_mode: "bridge"
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    expose:
+      - 7474
+      - 7687
+    volumes:
+      - ./db/dbms:/data/dbms
+    environment:
+      - NEO4J_AUTH=none
+      - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
+      - dbms.connector.bolt.listen_address="localhost:7474"
+      - dbms.connector.https.advertised_address="localhost:7473"
+      - dbms.connector.http.advertised_address="localhost:7474"
+    volumes:
+      - ./plugins:/plugins
+      - ./import:/import
+      - ./data:/data
