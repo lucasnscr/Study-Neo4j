@@ -49,6 +49,9 @@ CREATE
 ;
 ```
 
+![graphNeo4j](https://user-images.githubusercontent.com/26165085/126043071-fd64cc5f-9bcb-4326-a48f-32ee45a903da.png)
+
+
 ### Technologies
 
 The following technologies were used to carry out the project:
